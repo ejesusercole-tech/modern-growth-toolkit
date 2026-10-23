@@ -3,80 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modern Growth Toolkit — Coming soon</title>
-  <meta name="description" content="A free school for digital growth is being assembled. 15+ pro-level courses on AI, ads, social, SEO and automation — 100% free. Join the waitlist.">
-  <meta property="og:title" content="Modern Growth Toolkit — Coming soon">
-  <meta property="og:description" content="Every growth skill. Zero cost. Join the waitlist and get the AI Toolkit first.">
-  <meta name="theme-color" content="#FF5A1F">
-  <link rel="icon" href="mgt-favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="apple-touch-icon-180.png">
+  <title>Did You Hear? — Coming soon</title>
+  <meta name="description" content="Your daily dose of the biggest celebrity news, Hollywood drama and internet culture tea — delivered in under 60 seconds. Coming soon to YouTube.">
+  <meta property="og:title" content="Did You Hear? — Coming soon">
+  <meta property="og:description" content="Celebrity news, Hollywood drama and internet culture tea in under 60 seconds. Get the scoop first.">
+  <meta property="og:image" content="assets/dyh-banner.jpg">
+  <meta name="theme-color" content="#0B0B14">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- ================= TOP BAR ================= -->
 <header class="top wrap">
-  <img class="logo" src="mgt-logo-website.svg" alt="Modern Growth Toolkit" width="146" height="44">
-  <a class="btn btn--ghost btn--sm" href="https://www.youtube.com/@moderngrowthtoolkit?sub_confirmation=1" target="_blank" rel="noopener">[ YouTube ]</a>
+  <a class="brand" href="#" aria-label="Did You Hear? home">
+    <img src="assets/dyh-logo.png" alt="Did You Hear?" width="64" height="48">
+    <span class="brand__name">Did You <em>Hear?</em></span>
+  </a>
+  <a class="btn btn--dark btn--sm" data-yt href="#" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> YouTube
+  </a>
 </header>
 
-<main class="wrap main">
-  <section class="intro">
-    <p class="label"><span class="led"></span> Status: under assembly</p>
-    <h1 class="display">The toolkit<br>is being<br><span class="hl">built.</span></h1>
-    <p class="lead">A free school for digital growth. Pro-level courses on AI, paid ads, social media, SEO, automation and web design — all on YouTube, all free. We're putting the last pieces in place.</p>
-
-    <div class="promise">
-      <p class="promise__label">Our promise</p>
-      <ul>
-        <li>Every course 100% free. Forever.</li>
-        <li>No paywall. No upsell. No "secret masterclass".</li>
-        <li>Waitlist gets the AI Toolkit before anyone else.</li>
-      </ul>
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero wrap">
+  <div class="hero__copy">
+    <div class="tags">
+      <span class="tag tag--magenta">Coming soon</span>
+      <span class="tag tag--outline"><span class="dot"></span> Brewing now</span>
     </div>
 
-    <!-- Replace action with your Kit / MailerLite / Beehiiv form endpoint
-    <form class="signup" id="signup" action="#" method="post" novalidate>
-      <label class="sr-only" for="email">Email address</label>
-      <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required>
-      <button class="btn btn--orange" type="submit">[ Join the waitlist ]</button>
-      <p class="signup__msg" id="signupMsg" role="status"></p>
-    </form>
-    <p class="fine">One email when we launch. No spam, ever.</p> -->
-  </section>
+    <h1 class="headline">
+      <span class="headline__line">The tea is</span>
+      <span class="headline__line headline__line--pink">almost ready.</span>
+    </h1>
 
-  <aside class="panel" aria-label="Build log">
-    <div class="panel__head">
-      <span>MGT / BUILD LOG</span>
-      <span class="panel__status"><span class="led"></span> LIVE</span>
+    <p class="lead">Your daily dose of the biggest <strong>celebrity news</strong>, <strong>Hollywood drama</strong> and <strong>internet culture tea</strong> — delivered in under 60 seconds.</p>
+
+    <!-- Waitlist on torn paper -->
+    <div class="paper">
+      <p class="paper__kicker">Don't miss a single scoop</p>
+      <p class="paper__title">Get the tea <em>first.</em></p>
+      <!-- Replace action with your Kit / MailerLite / Beehiiv form endpoint -->
+      <form class="signup" id="signup" action="#" method="post" novalidate>
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+        <button class="btn btn--magenta" type="submit">Spill it to me</button>
+        <p class="signup__msg" id="signupMsg" role="status"></p>
+      </form>
+      <p class="paper__fine">One email when we go live. No spam — just the good stuff.</p>
     </div>
+  </div>
 
-    <!-- Update each item's status as you go: done / progress / queued -->
-    <ul class="log">
-      <li class="log__item is-done"><span class="log__code">01</span><span class="log__name">Brand &amp; identity</span><span class="log__state">✓ Done</span></li>
-      <li class="log__item is-done"><span class="log__code">02</span><span class="log__name">7 learning tracks mapped</span><span class="log__state">✓ Done</span></li>
-      <li class="log__item is-progress"><span class="log__code">03</span><span class="log__name">15+ courses recording</span><span class="log__state">In progress</span></li>
-      <li class="log__item is-progress"><span class="log__code">04</span><span class="log__name">AI Toolkit apps</span><span class="log__state">In progress</span></li>
-      <li class="log__item is-queued"><span class="log__code">05</span><span class="log__name">Full website launch</span><span class="log__state">Next</span></li>
-    </ul>
+  <div class="hero__art" aria-hidden="true">
+    <svg class="spark spark--1" viewBox="0 0 24 24"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z"/></svg>
+    <svg class="spark spark--2" viewBox="0 0 24 24"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z"/></svg>
+    <svg class="spark spark--3" viewBox="0 0 24 24"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z"/></svg>
+    <svg class="crown" viewBox="0 0 48 34"><path d="M5 30 9 9l9 11 6-16 6 16 9-11 4 21Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><circle cx="9" cy="7" r="2.4" fill="currentColor"/><circle cx="24" cy="3" r="2.4" fill="currentColor"/><circle cx="39" cy="7" r="2.4" fill="currentColor"/></svg>
 
-    <div class="bar" aria-hidden="true"><span></span></div>
+    <img class="hero__logo" src="assets/dyh-logo.png" alt="" width="640" height="479">
 
-    <div class="tracks" aria-label="Tracks coming">
-      <span>T-01 AI</span><span>T-02 Paid Ads</span><span class="is-hot">T-03 Social &amp; Content</span><span>T-04 Design</span><span>T-05 SEO</span><span>T-06 Automation</span><span>T-07 Web &amp; Products</span>
+    <span class="sticker sticker--breaking">Breaking</span>
+    <span class="sticker sticker--exclusive">Exclusive</span>
+    <span class="sticker sticker--tea">Spill<br>the tea</span>
+
+    <div class="wave">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
     </div>
+  </div>
+</section>
 
-    <div class="panel__foot"><span>REV. 2026</span><span class="barcode" aria-hidden="true"></span><span>COMING SOON</span></div>
-  </aside>
+<!-- ================= TICKER ================= -->
+<div class="ticker" aria-label="Topics">
+  <div class="ticker__track">
+    <span>Breaking</span><i>✦</i><span>Celebrity news</span><i>✦</i><span>Hollywood drama</span><i>✦</i><span>Pop culture</span><i>✦</i><span>Viral moments</span><i>✦</i><span>Spill the tea</span><i>✦</i>
+    <span aria-hidden="true">Breaking</span><i>✦</i><span aria-hidden="true">Celebrity news</span><i>✦</i><span aria-hidden="true">Hollywood drama</span><i>✦</i><span aria-hidden="true">Pop culture</span><i>✦</i><span aria-hidden="true">Viral moments</span><i>✦</i><span aria-hidden="true">Spill the tea</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ================= WHAT'S ON THE MENU ================= -->
+<section class="menu wrap">
+  <p class="kicker">What's on the menu</p>
+  <h2 class="h2">Everything everyone's <em>talking about.</em></h2>
+
+  <div class="cards">
+    <article class="card">
+      <span class="card__tag tag tag--magenta">Celebrity</span>
+      <h3>Celebrity updates</h3>
+      <p>New couples, big splits, surprise announcements. The trending stories, the second they break.</p>
+    </article>
+    <article class="card card--dark">
+      <span class="card__tag tag tag--coral">Hollywood</span>
+      <h3>Hollywood drama</h3>
+      <p>Red carpets, feuds and behind-the-scenes moments — broken down so you know what really happened.</p>
+    </article>
+    <article class="card card--plum">
+      <span class="card__tag tag tag--white">Internet</span>
+      <h3>Internet culture tea</h3>
+      <p>The viral clips, memes and pop culture moments taking over your feed this week.</p>
+    </article>
+  </div>
+
+  <div class="promise">
+    <div class="promise__item"><strong>60s</strong><span>or less per story</span></div>
+    <div class="promise__item"><strong>Daily</strong><span>fresh scoops</span></div>
+    <div class="promise__item"><strong>100%</strong><span>free on YouTube</span></div>
+  </div>
+</section>
+
+<!-- ================= CHANNEL PREVIEW ================= -->
+<section class="preview wrap">
+  <figure class="preview__frame">
+    <img src="assets/dyh-banner.jpg" alt="Did You Hear? channel banner: breaking the biggest stories in celebrity and entertainment news." loading="lazy" width="1600" height="533">
+  </figure>
+  <div class="preview__cta">
+    <p class="preview__text">Be there when the first scoop drops.</p>
+    <a class="btn btn--magenta btn--lg" data-yt href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Subscribe on YouTube
+    </a>
+    <p class="preview__note">Hit the bell <span aria-hidden="true">🔔</span> so you never miss the tea.</p>
+  </div>
+</section>
 </main>
 
 <footer class="foot">
   <div class="wrap foot__inner">
-    <p>Brands &amp; partners: <a href="mailto:hello@moderngrowthtoolkit.com?subject=Partnership%20with%20Modern%20Growth%20Toolkit">hello@moderngrowthtoolkit.com</a></p>
-    <p><a href="https://www.youtube.com/@moderngrowthtoolkit" target="_blank" rel="noopener">@moderngrowthtoolkit</a> · © <span id="year">2026</span></p>
+    <p>Business inquiries: <a data-email href="#">your@email.com</a></p>
+    <p>© <span id="year">2026</span> Did You Hear? · Celebrity · Pop culture · Viral moments</p>
   </div>
 </footer>
 

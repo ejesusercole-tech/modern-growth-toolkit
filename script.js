@@ -1,10 +1,23 @@
-/* Modern Growth Toolkit — Coming soon */
+/* Did You Hear? — Coming soon */
+
+/* ===== EDIT YOUR LINKS HERE ===== */
+var CONFIG = {
+  youtube: "https://www.youtube.com/@YOURCHANNEL?sub_confirmation=1", // your channel URL
+  email: "your@email.com"                                            // business inquiries email
+};
+/* ================================ */
+
 (function () {
   "use strict";
 
-  /* Waitlist form.
-     Connect your email provider: set the form's `action` to your
-     Kit / MailerLite / Beehiiv endpoint. While action is "#", it runs in demo mode. */
+  document.querySelectorAll("[data-yt]").forEach(function (a) { a.href = CONFIG.youtube; });
+  document.querySelectorAll("[data-email]").forEach(function (a) {
+    a.href = "mailto:" + CONFIG.email + "?subject=Business%20inquiry%20%E2%80%94%20Did%20You%20Hear%3F";
+    a.textContent = CONFIG.email;
+  });
+
+  /* Waitlist form — set the form's `action` to your email provider endpoint.
+     While action is "#", it runs in demo mode. */
   var form = document.getElementById("signup");
   var input = document.getElementById("email");
   var msg = document.getElementById("signupMsg");
@@ -27,7 +40,7 @@
       }
       if (form.getAttribute("action") === "#") {
         e.preventDefault();
-        msg.textContent = "You're on the list. We'll email you the moment we launch.";
+        msg.textContent = "You're on the list. The tea is coming your way ✨";
         msg.className = "signup__msg is-ok";
         form.reset();
       }
