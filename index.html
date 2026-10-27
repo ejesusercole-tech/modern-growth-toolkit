@@ -3,141 +3,118 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Did You Hear? — Coming soon</title>
-  <meta name="description" content="Your daily dose of the biggest celebrity news, Hollywood drama and internet culture tea — delivered in under 60 seconds. Coming soon to YouTube.">
-  <meta property="og:title" content="Did You Hear? — Coming soon">
-  <meta property="og:description" content="Celebrity news, Hollywood drama and internet culture tea in under 60 seconds. Get the scoop first.">
-  <meta property="og:image" content="assets/dyh-banner.jpg">
-  <meta name="theme-color" content="#0B0B14">
-  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon-180.png">
+  <title>MGT — Coming soon</title>
+  <meta name="description" content="Retro 3D assets for survival horror and post-apocalyptic games. Low poly, dirty textures, built for retro projects. Coming soon.">
+  <meta property="og:title" content="MGT — Something is coming out of the fog">
+  <meta property="og:description" content="Retro 3D assets for survival horror and post-apocalyptic games. Coming soon.">
+  <meta property="og:image" content="crt-corridor.png">
+  <meta name="theme-color" content="#0B0C0A">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:wght@700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ================= TOP BAR ================= -->
-<header class="top wrap">
-  <a class="brand" href="#" aria-label="Did You Hear? home">
-    <img src="assets/dyh-logo.png" alt="Did You Hear?" width="64" height="48">
-    <span class="brand__name">Did You <em>Hear?</em></span>
-  </a>
-  <a class="btn btn--dark btn--sm" data-yt href="#" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> YouTube
-  </a>
-</header>
-
-<main>
-<!-- ================= HERO ================= -->
-<section class="hero wrap">
-  <div class="hero__copy">
-    <div class="tags">
-      <span class="tag tag--magenta">Coming soon</span>
-      <span class="tag tag--outline"><span class="dot"></span> Brewing now</span>
-    </div>
-
-    <h1 class="headline">
-      <span class="headline__line">The tea is</span>
-      <span class="headline__line headline__line--pink">almost ready.</span>
-    </h1>
-
-    <p class="lead">Your daily dose of the biggest <strong>celebrity news</strong>, <strong>Hollywood drama</strong> and <strong>internet culture tea</strong> — delivered in under 60 seconds.</p>
-
-    <!-- Waitlist on torn paper -->
-    <div class="paper">
-      <p class="paper__kicker">Don't miss a single scoop</p>
-      <p class="paper__title">Get the tea <em>first.</em></p>
-      <!-- Replace action with your Kit / MailerLite / Beehiiv form endpoint -->
-      <form class="signup" id="signup" action="#" method="post" novalidate>
-        <label class="sr-only" for="email">Email address</label>
-        <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
-        <button class="btn btn--magenta" type="submit">Spill it to me</button>
-        <p class="signup__msg" id="signupMsg" role="status"></p>
-      </form>
-      <p class="paper__fine">One email when we go live. No spam — just the good stuff.</p>
-    </div>
-  </div>
-
-  <div class="hero__art" aria-hidden="true">
-    <svg class="spark spark--1" viewBox="0 0 24 24"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z"/></svg>
-    <svg class="spark spark--2" viewBox="0 0 24 24"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z"/></svg>
-    <svg class="spark spark--3" viewBox="0 0 24 24"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z"/></svg>
-    <svg class="crown" viewBox="0 0 48 34"><path d="M5 30 9 9l9 11 6-16 6 16 9-11 4 21Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><circle cx="9" cy="7" r="2.4" fill="currentColor"/><circle cx="24" cy="3" r="2.4" fill="currentColor"/><circle cx="39" cy="7" r="2.4" fill="currentColor"/></svg>
-
-    <img class="hero__logo" src="assets/dyh-logo.png" alt="" width="640" height="479">
-
-    <span class="sticker sticker--breaking">Breaking</span>
-    <span class="sticker sticker--exclusive">Exclusive</span>
-    <span class="sticker sticker--tea">Spill<br>the tea</span>
-
-    <div class="wave">
-      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TICKER ================= -->
-<div class="ticker" aria-label="Topics">
-  <div class="ticker__track">
-    <span>Breaking</span><i>✦</i><span>Celebrity news</span><i>✦</i><span>Hollywood drama</span><i>✦</i><span>Pop culture</span><i>✦</i><span>Viral moments</span><i>✦</i><span>Spill the tea</span><i>✦</i>
-    <span aria-hidden="true">Breaking</span><i>✦</i><span aria-hidden="true">Celebrity news</span><i>✦</i><span aria-hidden="true">Hollywood drama</span><i>✦</i><span aria-hidden="true">Pop culture</span><i>✦</i><span aria-hidden="true">Viral moments</span><i>✦</i><span aria-hidden="true">Spill the tea</span><i>✦</i>
+<!-- ===== STATUS STRIP ===== -->
+<div class="strip" aria-hidden="true">
+  <div class="marq">
+    <span>▶ TRANSMISSION INCOMING</span><span>☢ FIRST DROP: COMING SOON</span><span>✚ STAY CLOSE TO THE RADIO</span>
+    <span>▶ TRANSMISSION INCOMING</span><span>☢ FIRST DROP: COMING SOON</span><span>✚ STAY CLOSE TO THE RADIO</span>
   </div>
 </div>
 
-<!-- ================= WHAT'S ON THE MENU ================= -->
-<section class="menu wrap">
-  <p class="kicker">What's on the menu</p>
-  <h2 class="h2">Everything everyone's <em>talking about.</em></h2>
+<!-- ===== HEADER ===== -->
+<header class="top">
+  <div class="wrap top__inner">
+    <span class="brand">
+      <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true"><path d="M21 3 L37 12 L21 21 L5 12 Z" fill="#E65A3A"/><path d="M5 12 L21 21 L21 39 L5 30 Z" fill="none" stroke="#ECE6D3" stroke-width="2.5"/><path d="M37 12 L21 21 L21 39 L37 30 Z" fill="#ECE6D3"/><path d="M21 30 L5 21" stroke="#ECE6D3" stroke-width="1.5" fill="none"/><path d="M21 3 L37 12 L21 21 L5 12 Z" fill="none" stroke="#0B0C0A" stroke-width="1.2"/></svg>
+      <span class="brand__word">MG<span class="rust">T</span></span>
+    </span>
+    <span class="status"><span class="blink rust">●</span> STATUS: UNDER CONSTRUCTION</span>
+  </div>
+</header>
 
-  <div class="cards">
-    <article class="card">
-      <span class="card__tag tag tag--magenta">Celebrity</span>
-      <h3>Celebrity updates</h3>
-      <p>New couples, big splits, surprise announcements. The trending stories, the second they break.</p>
-    </article>
-    <article class="card card--dark">
-      <span class="card__tag tag tag--coral">Hollywood</span>
-      <h3>Hollywood drama</h3>
-      <p>Red carpets, feuds and behind-the-scenes moments — broken down so you know what really happened.</p>
-    </article>
-    <article class="card card--plum">
-      <span class="card__tag tag tag--white">Internet</span>
-      <h3>Internet culture tea</h3>
-      <p>The viral clips, memes and pop culture moments taking over your feed this week.</p>
-    </article>
+<main>
+<!-- ===== HERO ===== -->
+<section class="wrap hero">
+  <div class="hero__copy">
+    <p class="prompt">C:\MGT&gt; INITIALIZING<span class="blink">_</span></p>
+    <h1 class="headline">Something is<br>coming out<br><span class="rust">of the fog.</span></h1>
+    <p class="lead">Retro 3D assets for survival horror and post-apocalyptic games. Low poly, dirty textures, built for retro projects. The doors open soon.</p>
+
+    <div class="loader">
+      <div class="loader__meta"><span>LOADING WORLD DATA</span><span class="blink phos">PLEASE WAIT</span></div>
+      <div class="loader__track"><div class="loader__bar"></div></div>
+    </div>
   </div>
 
-  <div class="promise">
-    <div class="promise__item"><strong>60s</strong><span>or less per story</span></div>
-    <div class="promise__item"><strong>Daily</strong><span>fresh scoops</span></div>
-    <div class="promise__item"><strong>100%</strong><span>free on YouTube</span></div>
+  <div class="hero__tv">
+    <div class="tv">
+      <div class="crt tv__screen">
+        <img class="px flick tv__img" src="crt-corridor.png" alt="A dark, foggy corridor glimpsed on an old CRT screen" width="1200" height="900">
+        <div class="tv__vignette"></div>
+        <div class="tv__hud">
+          <div class="tv__row"><span>CH 00</span><span><span class="blink rust">●</span> REC</span></div>
+          <div class="tv__center">
+            <div class="tv__nosignal">NO SIGNAL</div>
+            <div class="blink phos tv__standby">STAND BY</div>
+          </div>
+          <div class="tv__row"><span>[ CLASSIFIED ]</span><span>--:--:-- AM</span></div>
+        </div>
+      </div>
+      <div class="tv__base">
+        <span>MGT-1999</span>
+        <span class="tv__power"><span class="blink tv__led"></span>STANDBY</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ================= CHANNEL PREVIEW ================= -->
-<section class="preview wrap">
-  <figure class="preview__frame">
-    <img src="assets/dyh-banner.jpg" alt="Did You Hear? channel banner: breaking the biggest stories in celebrity and entertainment news." loading="lazy" width="1600" height="533">
-  </figure>
-  <div class="preview__cta">
-    <p class="preview__text">Be there when the first scoop drops.</p>
-    <a class="btn btn--magenta btn--lg" data-yt href="#" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Subscribe on YouTube
-    </a>
-    <p class="preview__note">Hit the bell <span aria-hidden="true">🔔</span> so you never miss the tea.</p>
+<!-- ===== WORLDS (locked) ===== -->
+<section class="worlds">
+  <div class="wrap">
+    <p class="kicker">[ SELECT MODE ]</p>
+    <h2 class="h2">Two worlds.<br><span class="rust">Both locked. For now.</span></h2>
+
+    <div class="modes">
+      <article class="crt mode mode--horror">
+        <img class="px mode__img" src="mode-horror.png" alt="" width="960" height="720">
+        <div class="mode__body">
+          <div class="mode__top"><span class="mode__tag">MODE 01</span><span class="mode__lock rust">▣ LOCKED</span></div>
+          <div>
+            <h3 class="mode__title">Horror /<br>Survival</h3>
+            <p class="mode__text">Fog, flickering lights and places nobody should walk alone.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="crt mode mode--scifi">
+        <img class="px mode__img" src="mode-scifi.png" alt="" width="960" height="720">
+        <div class="mode__body">
+          <div class="mode__top"><span class="mode__tag">MODE 02</span><span class="mode__lock phos">▣ LOCKED</span></div>
+          <div>
+            <h3 class="mode__title">Sci-fi /<br>Post-apoc</h3>
+            <p class="mode__text">Rust, radiation and whatever survived underground.</p>
+          </div>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 </main>
 
+<!-- ===== FOOTER ===== -->
 <footer class="foot">
   <div class="wrap foot__inner">
-    <p>Business inquiries: <a data-email href="#">your@email.com</a></p>
-    <p>© <span id="year">2026</span> Did You Hear? · Celebrity · Pop culture · Viral moments</p>
+    <div>
+      <p class="foot__title">Stay close to the radio.</p>
+      <p class="foot__text">Questions, collabs or press: <a href="mailto:info@moderngrowthtoolkit.com">info@moderngrowthtoolkit.com</a></p>
+    </div>
+    <span class="foot__legal">© 2026 MGT · LOW-POLY SURVIVAL KITS</span>
   </div>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
